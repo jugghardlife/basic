@@ -10,6 +10,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\EntryForm;
+use app\models\Country;
 
 class SiteController extends Controller
 {
@@ -139,9 +140,9 @@ class SiteController extends Controller
 
         if($model->load(Yii::$app->request->post()) && $model->validate())
         {
-            return $this->render('entry-confirm',['model'=>$model]);
+            return $this->render('entry-confirm', ['model' => $model]);
         }else{
-            return $this->render('entry',['model'=>$model]);
+            return $this->render('entry', ['model' => $model]);
         }
     }
 }

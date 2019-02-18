@@ -1,8 +1,9 @@
 <?php
 use yii\helpers\Html;
 ?>
-<p>你提交的信息</p>
+<p>You have entered the following information:</p>
+
 <ul>
-	<li><label>name:</label><?php =Html::encode($model->name)?></li>
-	<li><label>name:</label><?php =Html::encode($model->name)?></li>
+    <li><label>Name</label>: <?= Html::encode($model->name) ?></li>
+    <li><label>Email</label>: <?= Html::encode($model->email) ?></li>
 </ul>
